@@ -52,7 +52,7 @@ nav>ul>li>a{
 }
 
 nav li:hover{
-	background-color: purple;
+	background-color: green;
 	color: white;
 }
 
