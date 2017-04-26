@@ -84,12 +84,15 @@ h4>p{
 	font-style: italic;
 }
 
-.quick-facts >article{
+.quick-facts > article{
 	margin-bottom: 1px solid green;
+}
+.quick-facts{
+	margin-bottom: 0px;
 }
 
 footer{
-	
+	margin-top: 1px solid red;
 	margin-top: 30px;
 }
 
