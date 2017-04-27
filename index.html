@@ -1,109 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<title>First WebSite</title>
-		<meta charset="UTF-8">
-		<meta name="description" content="Website using 960-GridSystem">
-		<meta name="keyword" content="Nithyaprasanth,Pasupathy,Full stack developer">
-		<meta name="author" content="Nithyaprasanth Pasupathy">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
+<head>
+    <title>First WebSite</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Website using 960-GridSystem">
+    <meta name="keyword" content="Nithyaprasanth,Pasupathy,Full stack developer">
+    <meta name="author" content="Nithyaprasanth Pasupathy">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--969-GS FrameWork-->
+    <link rel="stylesheet" type="text/css" href="lib/960-GS/960.css">
+    <!-- Custom StyleSheet and Script File-->
+    <link rel="stylesheet" type="text/css" href="css/first_website.css">
+    <!--<script type="text/javascript" src="js/first_website.js"></script>-->
+</head>
+<!--End of Head -->
 
-		<!--969-GS FrameWork-->
-  		<link  rel="stylesheet" type="text/css" href="lib/960-GS/960.css">
+<body>
+    <header>
+        <nav>
+            <h2>Open Source</h2>
+            <ul>
+                <li><a href="#heroic">Home</a></li>
+                <li><a href="#colo">Created As</a></li>
+                <li><a href="#contributing">Contribute</a></li>
+                <li><a href="#forum">Forum</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <!--End of Header Section-->
+    <article id="heroic">
+        <h3>Scope</h3>
+        <figure> <img src="images/osi.png" alt="osi"> </figure>
+        <button class="button-style">opensource.org</button>
+        <div class="text-style">The Open Source Initiative is an organization dedicated to promoting open-source software.</div>
+    </article>
+    <hr>
+    <!--End of Heroic Section-->
+    <div id="second">
+        <section class="container_12 three-coloumn">
+            <h2 class="heading-style">Created as Open Source</h2>
+            <article id="colo" class="grid_4">
+                <h2>Linux</h2>
+                <figure> <img src="images/tux.png" alt="linux"> </figure>
+                <form class="form-display" action="https://linux.org" method="get">
+                    <button class="button-article">Linux</button>
+                </form>
+            </article>
+            <article class="grid_4">
+                <h2>WordPress</h2>
+                <figure> <img src="images/wordpress.png" alt="wordpress"> </figure>
+                <form class="form-display" action="https://wordpress.org" method="get">
+                    <button class="button-article">Wordpress</button>
+                </form>
+            </article>
+            <article class="grid_4 omega">
+                <h2>Fire Fox</h2>
+                <figure> <img src="images/firefox.png" alt="firefox"> </figure>
+                <form class="form-display" action="https://firefox.org" method="get">
+                    <button class="button-article">Firefox</button>
+                </form>
+            </article>
+        </section>
+    </div>
+    <hr>
+    <!--End of 3 coloumn Section-->
+    <div class="two-coloumn">
+        <section class="container_12" id="contributing">
+            <h2 class="heading-style">Contribute to Open Source</h2>
+            <div class="grid_6">
+                <figure> <img src="images/contribute.svg" alt="svg"> </figure>
+            </div>
+            <div class="gris_6 style">
+                <h5></h5>
+                <p> <strong>
+                            Want to Contribute? But don't know how to? Here it is!!
+                    </strong> </p>
+                <form class="form-display" action="https://opensource.guide/" method="get">
+                    <button class="button-contribute">Explore</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <hr>
+    <div id="forum">
+        <section class="container_12">
+            <h2 class="heading-style">Forum</h2>
+            <article class="grid_6">
+                <h2 class="heading-style">Ask</h2>
+                <form>
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="email" id="email" placeholder="email" required>
+                    <input type="text" id="ques" placeholder="Questions" required>
+                    <input type="button" class="button-style" value="Ask" id="ask"> </form>
+            </article>
+            <article class="grid_6">
+                <h2 class="heading-style">What's going on</h2>
+                <figure class="grid_1 aipha omega inline"> <img src="images/watch.png" alt="watch" class="resize"> </figure>
+                <div class="grid_5 alpha omega news-style">
+                    <a href="http://www.networkworld.com/article/3192352/open-source-tools/5-more-open-source-companies-to-watch-in-2017.html">
+                        <p>5 more open source companies to watch in 2017.</p>
+                    </a>
+                </div>
+                <figure class="grid_1 aipha omega inline"> <img src="images/new2.png" alt="watch" class="resize"> </figure>
+                <div class="grid_5 alpha omega news-style">
+                    <a href="https://opensource.com/article/17/4/openstack-user-survey">
+                        <p>Users stand up, speak out, and deliver data on OpenStack growth.</p>
+                    </a>
+                </div>
+                <figure class="grid_1 aipha omega inline"> <img src="images/new3.png" alt="watch" class="resize"> </figure>
+                <div class="grid_5 alpha omega news-style">
+                    <a href="https://www.linux.com/news/open-source-groups-provide-new-licensing-resources">
+                        <p>Open Source Groups Provide New Licensing Resources.</p>
+                    </a>
+                </div>
+            </article>
+        </section>
+    </div>
+    <!--End of 2 vertical with 3 rows section-->
+    <footer>
+        <div>
+            <figure>
+                <a href "#"> <img src="images/linkedin.png" alt="linkedin"></a>
+            </figure>
+            <figure>
+                <a href "#"> <img src="images/google-plus.png" alt="g+"></a>
+            </figure>
+            <figure>
+                <a href "#"> <img src="images/twitter.png" alt="twitter"></a>
+            </figure>
+            <figure>
+                <a href "#"> <img src="images/facebook.png" alt="fb"></a>
+            </figure>
+            <p>Follow us:</p>
+            <aside>
+                <p> &copy;&nbsp;2017 opensource. </p>
+            </aside>
+        </div>
+    </footer>
+</body>
 
-  		<!-- Custom StyleSheet and Script File-->
-  		<link  rel="stylesheet" type="text/css" href="css/first_website.css">
-  		<!--<script type="text/javascript" src="js/first_website.js"></script>-->
-
-	</head> 							<!--End of Head -->
-
-	<body >
-
-		<header>
-			<nav>
-				<figure>
-					<img src="images/logo.png" alt="logo">
-				</figure>
-				<ul>
-      				<li><a href="#heroic">Home</a></li>
-      				<li><a href="#colo">Article</a></li>
-      				<li><a href="#fact">Quick Fact</a></li>
-    			</ul>
-			</nav>			
-		</header>			<!--End of Header Section-->
-
-		<article  id="heroic">
-			<h3>Scope</h3>
-				<figure>
-					<img src="images/opensource.jpg" alt="Open Source">
-			</figure>
-		</article>
-			 							<!--End of Heroic Section-->
-		<section class="container_12">
-			<h3>Open Source</h3>
-
-			<article id="colo" class="grid_4">
-				<h2>History</h2>
-				<p>In the 1960s, computer operating software and compilers were delivered as a part of hardware purchases without separate fees. At the time, source code, the human-readable form of software, was generally distributed with the software providing the ability to fix bugs or add new functions. Universities were early adopters of computing technology. Many of the modifications developed by universities were openly shared, in keeping with the academic principles of sharing knowledge, and organizations sprung up to facilitate sharing.
-				<a href="https://en.wikipedia.org/wiki/History_of_free_and_open-source_software">more</a></p>
-			</article>
-
-			<article class="grid_4">
-				<h2>Why Open Source?</h2>
-				<p>The question "Why open source?" really encompasses two questions for the enterprise to consider: "Why use open source software?" and "Why should I develop my software in a community-based, open source way?" Inherent in that second question is the issue of what enterprises can learn from the successes of open source communities.So, who should care about the answers to these questions? Well, virtually everyone.Open source applications are now available for every common type of enterprise software from databases to security software.<a href="http://www.linuxinsider.com/story/69788.html">more</a></p>
-			</article>
-
-			<article class="grid_4">
-				<h2>Benefits of OSS</h2>
-				<p>Open Source's proponents often claim that it offers significant benefits when compared to typical commercial products. Commercial products typically favour visible features (giving marketing advantage) over harder-to measure qualities . We shall describe this phenomenon as quality vs features.Open Source Software developers are evidently motivated by many factors but favouring features over quality is not happening. For many developers, peer review and acclaim is important, so it's likely that they will prefer to build software that is admired by their peers.<a href="http://open-source.gbdirect.co.uk/migration/benefit.html">more</a></p>
-			</article>
-
-										<!--End of 3 coloumn Section-->
-
-		
-
-			<article id="fact" class="grid_6">
-				<h2>Loerem Ipsum</h2>
-				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.<a href="http://www.lipsum.com/">more</a></p>
-			</article>
-
-			<article class="grid_6 quick-facts">
-				<h2>Quick Facts</h2>
-				<article>
-					<h4>Fact1</h4>
-					<p><strong>"The first open source software is not Linux but the A-2 system."</strong></p><hr>
-				</article>
-				<article>
-					<h4>Fact2</h4>
-					<p><strong>"By the year 2015, 95% of mainstream IT firms will deploy open source platforms to develop software applications."</strong></p><hr>
-				</article>
-				<article>
-					<h4>Fact3</h4>
-					<p><strong>"Just like the Oscars, the open source industry has prestigious awards of its own!."</strong></p><hr>
-				</article>
-			</article>
-				
-										<!--End of 2 vertical with 3 rows section-->
-		
-			<footer class="grid_12">
-				
-				<figure>
-					<img src="images/linkedin.png" alt="linkedin">
-				</figure>
-				<figure>
-					<img src="images/google-plus.png" alt="g+">
-				</figure>
-				<figure>
-					<img src="images/twitter.png" alt="twitter">
-				</figure>
-				<figure>
-					<img src="images/facebook.png" alt="fb">
-				</figure>
-
-			</footer>
-									<!--End of Footer-->
-		</section>
-		
-	</body>
 </html>
