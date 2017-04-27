@@ -42,11 +42,10 @@ nav h2 {
     font-size: 30px;
     display: inline-block;
     margin-left: 20px;
-    margin: 30px;
 }
 
 nav h2:hover {
-    font-size: 50px;
+    font-size: 35px;
 }
 
 nav>ul>li>a {
